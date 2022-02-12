@@ -1,0 +1,12 @@
+{% extends 'Base.html' %}
+
+{% block content %}
+    <h2>{{ obj.s_name }}</h2>
+    <h3>{{ obj.s_code }}</h3>
+    <h3>{{ obj.dept }}</h3>
+    <p>Professor(s) - {{ obj.prof }}</p>
+    <br>
+    <p>{{ obj.descp }}</p>
+    <p>{{ obj.elec }}</p>
+{% endblock %}
+

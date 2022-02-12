@@ -1,0 +1,11 @@
+{% extends 'Base.html' %}
+
+{% block content %}
+    <br>
+    <h2>
+        <a href="{% url 'Subjects:create-view' %}" >Create subject</a>
+    </h2>
+    <h2>
+        <a href="{% url 'Subjects:list-view' %}" >View subjects</a>
+    </h2>
+{% endblock %}
