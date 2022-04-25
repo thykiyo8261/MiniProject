@@ -11,5 +11,8 @@ class Subject(models.Model):
     prof = models.TextField(blank=True, null=True)
     elec = models.BooleanField(default=False)
 
+    def __str__(self):
+        return self.s_name
+
     def get_absolute_url(self):
         return reverse('Subjects:detail-view', kwargs={'sub_id':self.id})

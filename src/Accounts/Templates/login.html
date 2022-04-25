@@ -1,13 +1,14 @@
-{% extends 'base.html' %}
+<h1>Lorem Ipsum</h1>
+<br>
 
 {% block content %}
-    <h1>Log-in</h1>
+    <h2>Log-in</h2>
     <form method='POST' action='.'> {% csrf_token %}
         <p>
             <input type="text" name="username" placeholder="Enter username">
         </p>
         <p>
-            <input type="text" name="password" placeholder="Enter password">
+            <input type="password" name="password" placeholder="Enter password">
         </p>
         <p>
             <input type="submit" value="Login" />

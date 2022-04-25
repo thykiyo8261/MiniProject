@@ -4,9 +4,9 @@ from .models import Student, Membership
 class FormA(forms.ModelForm):
     class Meta:
         model = Student
-        fields = '__all__'
+        fields = ['branch', 'sem', 'cont']
 
 class Membership_form(forms.ModelForm):
     class Meta:
         model = Membership
-        fields = '__all__'
+        fields = ['m_type']

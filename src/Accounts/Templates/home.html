@@ -1,8 +1,32 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>Welcome {{request.user}}</h1>>
-    <br>
+    <h1>Welcome {{request.user.first_name}}</h1>>
+    <br><br><br>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur suscipit sodales libero eu interdum. Suspendisse elementum 
+        vestibulum lectus, vitae molestie odio viverra at. Integer eu vestibulum sapien. Interdum et malesuada fames ac ante ipsum 
+        primis in faucibus. Sed tincidunt purus sed dolor maximus, quis posuere ligula iaculis. Donec ultrices, lorem sit amet volutpat 
+        elementum, libero felis mollis eros, a eleifend nunc nibh at tellus. Vestibulum ornare, augue vitae elementum consectetur, 
+        turpis est pulvinar lectus, eget pulvinar turpis metus a quam.
+    </p>
+    <p>    
+        Sed neque purus, posuere et libero efficitur, vulputate eleifend nisl. Nunc finibus risus vitae neque volutpat varius. Nam a 
+        ultricies felis. Etiam id leo placerat, venenatis nunc in, ultricies elit. Ut hendrerit scelerisque congue. Nullam mollis, 
+        tortor ac congue porta, urna est vestibulum odio, nec dictum ligula metus a augue. Phasellus finibus, nibh et eleifend 
+        pellentesque, odio eros faucibus nisl, auctor sollicitudin urna sapien quis enim. Quisque ultrices urna lectus, a fringilla 
+        massa tincidunt vel. Vivamus mollis ex urna, non semper purus ornare et. Phasellus eu massa velit.
+    </p>
+    <p>    
+        Cras tellus arcu, mattis sit amet dictum malesuada, scelerisque eu metus. Donec vel lobortis tortor, sit amet viverra leo. 
+        Sed lobortis euismod commodo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur pulvinar condimentum 
+        sapien id pellentesque. Nulla eget sollicitudin purus. Suspendisse vel ex lectus. Class aptent taciti sociosqu ad litora 
+        torquent per conubia nostra, per inceptos himenaeos. Duis porttitor odio orci, a sollicitudin nibh suscipit in. Sed tempor 
+        viverra urna quis efficitur. Donec auctor nisi dolor, sit amet commodo magna ultrices id. Nulla facilisi. Etiam tellus augue, 
+        feugiat ultricies commodo semper, dapibus sed augue. Aenean nec porttitor mi. Ut id enim tincidunt, imperdiet elit et, gravida 
+        ante.
+    </p>
+    <br><br><br>
     <a href="{% url 'logout' %}">Logout</a>
     
 {% endblock %}
